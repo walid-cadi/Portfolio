@@ -3,7 +3,8 @@ import { NavBar } from "../layouts/NavBar/NavBar";
 
 export const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-[#000000] via-[#3E065F]  to-[#700B97] ">
+    // bg-gradient-to-r from-[#000000] via-[#3E065F]  to-[#700B97]
+    <div className="min-h-screen bg-[#100416]  ">
       <NavBar />
     </div>
   );
