@@ -49,10 +49,12 @@ export const NavBar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-x-3">
-          <a href="">
+          <a
+            href="https://www.linkedin.com/in/walid-cadi-532b38236/"
+            target="_blank">
             <FaLinkedin className="text-white text-4xl hover:text-[#8E05C2]" />
           </a>
-          <a href="">
+          <a href="https://github.com/walid-cadi" target="_blank">
             <FaGithub className="text-white text-4xl hover:text-[#8E05C2]" />
           </a>
         </div>
