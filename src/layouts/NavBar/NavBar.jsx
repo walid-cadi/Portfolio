@@ -31,32 +31,30 @@ export const NavBar = () => {
           </Link>
         </div>
       </div> */}
-      <div className="bg-transparent flex items-center justify-between p-8 fixed top-0 w-full">
+      <div className="bg-[#100416] flex items-center justify-between p-8 fixed top-0 w-full">
         <Link to="/">
           <img className="w-28" src={images.logo} alt="" />
         </Link>
 
-        
         <div className="hidden md:flex items-center gap-x-10 text-white text-xl font-semibold">
-          <Link to="" className="hover:text-[#8E05C2]">
+          <a href="#about" className="hover:text-[#8E05C2]">
             About
-          </Link>
-          <Link to="" className="hover:text-[#8E05C2]">
+          </a>
+          <a href="#projects" className="hover:text-[#8E05C2]">
             Projects
-          </Link>
-          <Link to="" className="hover:text-[#8E05C2]">
+          </a>
+          <a href="#contact" className="hover:text-[#8E05C2]">
             Contact
-          </Link>
+          </a>
         </div>
 
-        
         <div className="hidden md:flex items-center gap-x-3">
-          <Link to="path">
+          <a href="">
             <FaLinkedin className="text-white text-4xl hover:text-[#8E05C2]" />
-          </Link>
-          <Link to="path">
+          </a>
+          <a href="">
             <FaGithub className="text-white text-4xl hover:text-[#8E05C2]" />
-          </Link>
+          </a>
         </div>
 
         <div className="flex md:hidden items-center">
