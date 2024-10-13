@@ -2,6 +2,8 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { fadeIn } from "../../variants";
+import { motion } from "framer-motion";
 
 export const Contact = () => {
   const form = useRef();
@@ -93,13 +95,24 @@ export const Contact = () => {
     // </div>
     <div
       id="contact"
-      className="flex flex-col items-center gap-y-5 text-white p-5 lg:p-10">
-      <h1 className="text-3xl lg:text-4xl font-bold">Contact Me</h1>
+      className="mt-[15vh] flex flex-col items-center gap-y-5 text-white p-5 lg:p-10">
+      <motion.h1
+        variants={fadeIn("down", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-3xl lg:text-4xl font-bold">
+        Contact Me
+      </motion.h1>
 
       {/* Contact form and social links container */}
       <div className="flex flex-col lg:flex-row items-start gap-5 lg:gap-x-10 w-full lg:w-auto">
         {/* Contact Form */}
-        <form
+        <motion.form
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
           className="flex flex-col gap-2 p-6 bg-transparent border-2 border-white rounded-xl w-full lg:w-auto"
           ref={form}
           onSubmit={sendEmail}>
@@ -136,13 +149,18 @@ export const Contact = () => {
           <button
             type="submit"
             value="Send"
-            className="mt-4 inline-block w-full border-2 border-white rounded-lg bg-transparent px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-[#8E05C2]">
+            className="mt-4 inline-block w-full border-2 border-white rounded-lg bg-transparent px-6 py-2.5 font-medium uppercase leading-normal text-white hover:shadow-md hover:bg-[#631f7e]">
             Send
           </button>
-        </form>
+        </motion.form>
 
         {/* Social Media Icons */}
-        <div className="flex items-center gap-x-7 lg:flex-col gap-y-10">
+        <motion.div
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.7 }}
+          className="flex items-center gap-x-7 lg:flex-col gap-y-10">
           <a
             target="_blank"
             href="https://www.linkedin.com/in/walid-cadi-532b38236/"
@@ -161,7 +179,7 @@ export const Contact = () => {
             className="overflow-hidden flex items-center justify-center bg-transparent border-2 border-white rounded-full w-[80px] h-[80px] lg:w-[100px] lg:h-[100px]">
             <SiGmail className="text-4xl lg:text-6xl text-white hover:scale-110 duration-300" />
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

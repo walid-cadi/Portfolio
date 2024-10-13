@@ -31,10 +31,10 @@ export const NavBar = () => {
           </Link>
         </div>
       </div> */}
-      <div className="bg-[#100416] flex items-center justify-between p-8 fixed top-0 w-full">
-        <Link to="/">
+      <div className="bg-gradient-to-r from-[#000000] via-[#11021b]  to-[#700B97] z-50 flex items-center justify-between p-8 fixed top-0 w-full">
+        <a href="#home">
           <img className="w-28" src={images.logo} alt="" />
-        </Link>
+        </a>
 
         <div className="hidden md:flex items-center gap-x-10 text-white text-xl font-semibold">
           <a href="#about" className="hover:text-[#8E05C2]">
@@ -52,10 +52,10 @@ export const NavBar = () => {
           <a
             href="https://www.linkedin.com/in/walid-cadi-532b38236/"
             target="_blank">
-            <FaLinkedin className="text-white text-4xl hover:text-[#8E05C2]" />
+            <FaLinkedin className="text-white text-4xl hover:text-[#100416]" />
           </a>
           <a href="https://github.com/walid-cadi" target="_blank">
-            <FaGithub className="text-white text-4xl hover:text-[#8E05C2]" />
+            <FaGithub className="text-white text-4xl hover:text-[#100416]" />
           </a>
         </div>
 
