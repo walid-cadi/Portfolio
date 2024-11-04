@@ -108,7 +108,7 @@ export const Projects = () => {
       </motion.h1>
 
       <div className="flex flex-wrap justify-center gap-5 lg:gap-8">
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
@@ -129,9 +129,9 @@ export const Projects = () => {
               View Project
             </button>
           </div>
-        </motion.div>
+        </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
@@ -152,7 +152,7 @@ export const Projects = () => {
               View Project
             </button>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           variants={fadeIn("right", 0.2)}
@@ -171,9 +171,12 @@ export const Projects = () => {
               Social Geek is a social media platform that connects users through
               posts, fostering community engagement.
             </p>
-            <button className="bg-transparent w-[100%] border-2 text-lg lg:text-xl font-semibold border-white rounded-xl p-3 hover:text-black hover:bg-white">
+            <a
+              href="https://social-geek-kappa.vercel.app"
+              target="_blank"
+              className="bg-transparent w-[100%] border-2 text-lg lg:text-xl text-center font-semibold border-white rounded-xl p-3 hover:text-black hover:bg-white">
               View Project
-            </button>
+            </a>
           </div>
         </motion.div>
 
@@ -194,9 +197,12 @@ export const Projects = () => {
               Fashe is an online clothing store offering trendy and stylish
               apparel, allowing users to browse collections and shop.
             </p>
-            <button className="bg-transparent w-[100%] border-2 text-lg lg:text-xl font-semibold border-white rounded-xl p-3 hover:text-black hover:bg-white">
+            <a
+              href="https://fashe-peach.vercel.app/"
+              target="_blank"
+              className="bg-transparent w-[100%] border-2 text-lg lg:text-xl text-center font-semibold border-white rounded-xl p-3 hover:text-black hover:bg-white">
               View Project
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>

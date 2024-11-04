@@ -16,7 +16,7 @@ export const Home = () => {
         id="home"
         className="px-5 sm:px-[10vw] lg:px-[15vw] py-[10vh] lg:py-[15vh] mt-[10vh] lg:mt-[25vh] w-full ">
         <motion.h1
-          variants={fadeIn("right", 0.2)}
+          variants={fadeIn("down", 0.2)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
